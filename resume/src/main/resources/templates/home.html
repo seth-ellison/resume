@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+    <meta charset='utf-8'>
+    <link type="text/css" th:href="@{/css/pc/styles.css}" rel="stylesheet"></link>
+	<link rel="manifest" th:href="@{/assets/manifest.json}"></link>
+    <style></style>
+    <title>Resume</title>
+    <script th:src="@{/js/pc/playcanvas-stable.min.js}"></script>
+    <script th:inline="javascript">
+	    ASSET_PREFIX = /*[[@{/assets/}]]*/ '';
+	    SCRIPT_PREFIX = /*[[@{/js/pc/}]]*/ '';
+        SCENE_PATH = "641455.json";
+        CONTEXT_OPTIONS = {
+            'antialias': true,
+            'alpha': false,
+            'preserveDrawingBuffer': false,
+            'preferWebGl2': true
+        };
+        SCRIPTS = [ 14283129 ];
+        CONFIG_FILENAME = ASSET_PREFIX + "config.json";
+        pc.script.legacy = false;
+    </script>
+</head>
+<body>
+	<script th:src="@{/js/pc/\_\_start\_\_.js}"></script>
+	<script th:src="@{/js/pc/\_\_loading\_\_.js}"></script>
+</body>
+</html>
