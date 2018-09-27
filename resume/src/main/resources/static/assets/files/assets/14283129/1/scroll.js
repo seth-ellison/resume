@@ -36,7 +36,7 @@ Scroll.prototype.onTouchMove = function(event) {
 Scroll.prototype.update = function(dt) {
     
     this.angleZ = pc.math.lerp(7, -7, this.x / window.screen.width);
-    this.angleX = pc.math.lerp(4, -4, this.y / window.screen.height);
+    this.angleX = pc.math.lerp(-4, 4, this.y / window.screen.height);
     
     this.entity.setLocalEulerAngles(this.angleX, 0, this.angleZ);
     this.offsetSpeed.set(this.speedX, this.speedY);

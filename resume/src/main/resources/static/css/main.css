@@ -1,0 +1,25 @@
+.corner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 5000px){
+	.corner img {
+		height: 256px;
+		width: 256px;
+	}
+}
+@media (max-width: 900px) {
+	.corner img {
+		height: 128px;
+		width: 128px;
+	}
+}
+
+@media (max-width: 400px) {
+	.corner img {
+		height: 64px;
+		width: 64px;
+	}
+}
